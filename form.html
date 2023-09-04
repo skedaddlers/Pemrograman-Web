@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+
+label[for="likey"]{
+ display: block;
+  margin: 30px 10 10 10;
+}
+
+label {
+  display: block;
+  margin: 10 10 10 10;
+}
+
+table, td, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+</style>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form TEST</title>
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <center><a href="https://imgbb.com/"><img src="https://i.ibb.co/6NJ6JqV/memefurqon.webp" alt="memefurqon" border="0"></a></center>
+  <body>
+    <center><h1 id="title">Survei Anggota TC22</h1></center>
+    <center><p id="description">Isilah Survei Berikut dengan Sebenar-benarnya</p></center>
+    <form method="post" id="survey-form" action='https://register.tc22.org'>
+    <fieldset>
+        <center>
+            <table>
+                <center><caption>Anggota TC</caption></center>
+                <thead>
+                <tr>
+                    <th><span class="sr-only year">Tahun</span></th>
+                    <th><span class="sr-only year">2020</span></th>
+                    <th><span class="sr-only year">2021</span></th>
+                    <th><span class="sr-only year">2022</span></th>
+                    <th class="current"><span class="sr-only year">2023</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="data">
+                    <th>Laki-laki</th>
+                    <td>201</td>
+                    <td>190</td>
+                    <td>216</td>
+                    <td class="current">212</td>
+                </tr>
+                <tr class="data">
+                    <th>Perempuan</th>
+                    <td>61</td>
+                    <td>64</td>
+                    <td>67</td>
+                    <td class="current">70</td>
+        
+                </tr>
+                </tbody>
+            </table>
+        </center>
+    </fieldset>
+    <fieldset>
+      <label for="name" id="name-label">Masukkan Nama Lengkap Anda : <input required id="name" type="text" placeholder="Hanip Puqran"></label>
+      <label for="number" id="number-label">Masukkan Umur Anda : <input required id="number" placeholder="18" type="number" min="10" max="100"></label>
+      <label for="email" id="email-label">Masukkan Email Anda : <input required id="email" placeholder="hanifganteng@gmail.com" type="email"></label>
+      <label for="nrp" id="nrp-label">Masukkan NRP Anda : <input required id="nrp" placeholder="5025221161" type="nrp"></label>
+      <label for="dropdown">Pilih Gender Anda : 
+        <select id="dropdown">
+          <option value="">(Pilih salah satu)</option>
+          <option value="1">Laki-laki</option>
+          <option value="2">Perempuan</option>
+          <option value="3">Attack Helicopter</option>
+        </select>
+       </label>
+      </fieldset>
+      <fieldset>
+       <label>Apa cita-cita anda jika anda sudah lulus?</label>
+       <label for="webdev">
+        <input id="webdev" type="radio" class="inline" value="webdev" name="cita">
+        Web Developer
+       </label>
+       <label for="gamedev">
+        <input id="gamedev" type="radio" class="inline" value="gamedev" name="cita">
+        Game Developer
+       </label>
+       <label for="softwaredev">
+        <input id="softwaredev" type="radio" class="inline" value="softwaredev" name="cita">
+        Software Developer
+       </label>
+       <label for="datascientist">
+        <input id="datascientist" type="radio" class="inline" value="datascientist" name="cita">
+        Data Scientist
+       </label>
+       <label for="">
+        <input id="gold" type="radio" class="inline" value="gold" name="cita">
+        IT Consultant
+       </label>
+       <label for="lain">
+        <input id="lain" type="radio" class="inline" value="lain" name="cita">
+        Lainnya
+       </label>
+       <label for="likey">Mana sajakah di bawah Ini matkul yang Anda suka?</label>
+       <label for="daspro">
+        <input id="daspro" value="daspro" type="checkbox" class="inline" name="likey">
+        Dasar Pemrograman
+       </label>
+      <label for="sd">
+        <input id="sd" value="sd" type="checkbox" class="inline" name="likey">
+        Struktur Data
+       </label>
+       <label for="sisdig">
+        <input id="sisdig" value="sisdig" type="checkbox" class="inline" name="likey">
+        Sistem Digital
+       </label>
+       <label for="pbo">
+        <input id="pbo" value="pbo" type="checkbox" class="inline" name="likey">
+        Pemrograman Berorientasi Objek
+       </label>
+       <label for="pweb">
+        <input id="pweb" value="pweb" type="checkbox" class="inline" name="likey">
+        Pemrograman Web
+       </label>
+       <label for="ai">
+        <input id="ai" value="ai" type="checkbox" class="inline" name="likey">
+        Artificial Intellegence
+        </label>
+       <label for="3d">
+        <input id="3d" value="3d" type="checkbox" class="inline" name="likey">
+        Animasi 3D
+       </label>
+       <label for="sisop">
+        <input id="sisop" value="sisop" type="checkbox" class="inline" name="likey">
+        Sistem Operasi
+       </label>
+       <label for="matdis">
+        <input id="matdis" value="matdis" type="checkbox" class="inline" name="likey">
+        Matematika Diskrit
+       </label>
+        <label for="fisika">
+        <input id="fisika" value="fisika" type="checkbox" class="inline" name="likey">
+        Fisika
+       </label>
+        <label for="deskripsi">Deskripsikan orang seperti apa anda : <textarea placeholder="Saya suka memanggil sepuh ke orang..."></textarea></label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+    
+    </form>
+  </body>
+</html>
