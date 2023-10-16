@@ -25,7 +25,6 @@
             type: 'get',
             dataType: 'json',
             data: {
-                'currencies': 'AUD,EUR,GBP,PLN',
                 'access_key':'4398167ad67504ac53d3d4dc1d1f10c4',
                 'format':1
             },
@@ -33,7 +32,6 @@
                 console.log(result);
                 console.log(result);
                 const rate=result.quotes;
-                 console.log(rate);
                     $.each(rate, function (i, t) {
                         $('#list').append(`
                         <div class="col-md-3">
@@ -41,8 +39,10 @@
                                 <div class="card-body bg-success-subtle">
                                     <div class="row">
                                         <div class="col-2">
+                                        ${i}
                                         </div>
                                         <div class="col-9">
+                                        
                                         ${t}
                                         </div>
                                     </div>
@@ -50,7 +50,6 @@
                             </div>
                         </div>`);
                     });
-
                   
 
             }
