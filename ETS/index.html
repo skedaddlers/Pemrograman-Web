@@ -31,10 +31,10 @@
             },
             success: function (result) {
                 console.log(result);
-                    console.log(result);
-                const rate=result.quoes;
+                console.log(result);
+                const rate=result.quotes;
                  console.log(rate);
-                    $.each(result, function (i, rate) {
+                    $.each(rate, function (i, t) {
                         $('#list').append(`
                         <div class="col-md-3">
                             <div class="card m-3">
@@ -43,7 +43,7 @@
                                         <div class="col-2">
                                         </div>
                                         <div class="col-9">
-                                        ${rate}
+                                        ${t}
                                         </div>
                                     </div>
                                 </div>
