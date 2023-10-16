@@ -31,10 +31,9 @@
             },
             success: function (result) {
                 console.log(result);
-                if (result.Response == "True") 
                     console.log(result);
-                    const rate  = result.rates;
-                    console.log(rate);
+                const rate=result.quoes;
+                 console.log(rate);
                     $.each(result, function (i, rate) {
                         $('#list').append(`
                         <div class="col-md-3">
@@ -44,7 +43,7 @@
                                         <div class="col-2">
                                         </div>
                                         <div class="col-9">
-                                        ${result}
+                                        ${rate}
                                         </div>
                                     </div>
                                 </div>
